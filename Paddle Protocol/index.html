@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Paddle Protocol</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="game-header">
+    <h1>Paddle Protocol</h1>
+  </header>
+
+  <div id="pong-container">
+    <canvas id="pong" width="800" height="500"></canvas>
+    <div id="scoreboard">
+      <span id="player-score">0</span> : <span id="ai-score">0</span>
+    </div>
+    <div id="controls">
+      <button id="pause-btn">Pause</button>
+      <button id="restart-btn">Restart</button>
+    </div>
+    <div id="winner-message" class="hidden"></div>
+  </div>
+  <script src="pong.js"></script>
+  <footer>
+    &copy; 2025 Paddle Protocol. All Rights Reserved. Developed by Darsh Kulthia.
+  </footer>
+</body>
+
+</html>
