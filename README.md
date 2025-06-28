@@ -2,6 +2,9 @@
 
 Welcome to the **15x15 Developer Sprint**: a personal challenge to build **15 interesting, creative, and practical projects in 15 days**, ending with a beautiful showcase webpage on Day 16!
 
+![Repo Views](https://komarev.com/ghpvc/?username=dkulthia&repo=15x15-DevChallenge&label=Repo%20views&color=grey&style=plastic&abbreviated=true)
+
+
 > 👨‍💻 One day. One project. Zero excuses.
 
 ---
