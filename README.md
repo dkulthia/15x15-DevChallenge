@@ -14,7 +14,7 @@ Welcome to the **15x15 Developer Sprint**: a personal challenge to build **15 in
 | Day | 📅 Date       | Project Name                  | Tech Stack               | Focus Area                            | 🔗 Live Link                                           |
 |-----|---------------|-------------------------------|--------------------------|----------------------------------------|--------------------------------------------------------|
 | 1   | June 28       | Paddle Protocol               | HTML/CSS/JS              | Game logic, canvas, animations         | [Live](https://dkulthia.github.io/Paddle-Protocol/)    |
-| 2   | June 29       | AsciiProtocol                 | HTML/CSS/JS (Canvas)     | Image processing, creativity           | [Live](https://dkulthia.github.io/Ascii-Protocol/)     |
+| 2   | June 29       | Ascii Protocol                | HTML/CSS/JS (Canvas)     | Image processing, creativity           | [Live](https://dkulthia.github.io/Ascii-Protocol/)     |
 | 3   | June 30       | CSS Only Animation / Art      | HTML/CSS                 | Advanced CSS, visual creativity        | [Live](https://dkulthia.github.io/)                    |
 | 4   | June 1        | To-Do List                    | JavaScript               | DOM, localStorage, CRUD                | [Live](https://dkulthia.github.io/)                    |
 | 5   | July 2        | QR Code Generator             | JS / Python              | Libraries, input-output handling       | [Live](https://dkulthia.github.io/)                    |
