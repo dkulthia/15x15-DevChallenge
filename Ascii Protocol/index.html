@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ascii Protocol</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen flex flex-col justify-between p-6">
+
+  <header>
+    <h1 id="header" class="text-3xl font-bold ">Ascii Protocol</h1>
+  </header>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="w-full max-w-xl bg-gray-800 p-6 rounded-2xl shadow-lg">
+    <label class="block mb-4">
+      <span class="text-sm font-medium">Upload Image</span>
+      <input type="file" accept="image/*" id="imageInput" class="mt-1 block w-full text-sm bg-gray-700 border border-gray-600 rounded-md p-2" />
+    </label>
+
+    <label class="block mb-4">
+      <span class="text-sm font-medium">Character Width (Use 400 for moderate quality.)</span>
+      <input type="number" id="charWidth" value="400" class="mt-1 block w-full text-sm bg-gray-700 border border-gray-600 rounded-md p-2" />
+    </label>
+
+    <button id="generateBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl">Generate ASCII Image</button>
+
+    <button id="downloadBtn" class="mt-4 w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-xl hidden">Download as PNG</button>
+
+  </div>
+
+  <br>
+
+  <div id="canvascontainer" class="w-full max-w-xl bg-gray-800 p-6 rounded-2xl shadow-lg">
+    <div class="mt-6">
+      <canvas id="asciiCanvas" class="rounded-lg shadow-xl"></canvas>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <footer>
+    &copy; 2025 Ascii Protocol. All Rights Reserved. Developed by Darsh Kulthia.
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

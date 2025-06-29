@@ -1,0 +1,53 @@
+body {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Baloo 2", cursive;
+}
+
+header {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 20px;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-family: "Baloo 2", cursive;
+  color: #fff;
+}
+
+#canvascontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+#asciiCanvas {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #111;
+  color: #ccc;
+  font-size: 1rem;
+  font-family: "Baloo 2", cursive;
+}
