@@ -1,0 +1,637 @@
+body {
+  margin: 0;
+  padding: 2rem;
+  background-color: #2e3440;
+  font-family: "Baloo 2", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 20px;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-family: "Baloo 2", cursive;
+  color: #fff;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #eceff4;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  margin: 140px auto 80px auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #111;
+  color: #ccc;
+  font-size: 1rem;
+  font-family: "Baloo 2", cursive;
+}
+
+.btn {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Baloo 2", cursive;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  min-height: 50px;
+  text-align: center;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.5s, opacity 0.5s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.btn:active::after {
+  transform: translate(-50%, -50%) scale(2.5);
+  opacity: 1;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-1 {
+  background: #4caf50;
+}
+.btn-2 {
+  background: #2196f3;
+}
+.btn-3 {
+  background: #ff5722;
+}
+.btn-4 {
+  background: #9c27b0;
+}
+.btn-5 {
+  background: #ff9800;
+}
+.btn-6 {
+  background: #3f51b5;
+}
+.btn-7 {
+  background: #795548;
+}
+.btn-8 {
+  background: #00bcd4;
+}
+.btn-9 {
+  background: #e91e63;
+}
+.btn-10 {
+  background: #607d8b;
+}
+
+.btn-11 {
+  background: #8bc34a;
+}
+.btn-12 {
+  background: #03a9f4;
+}
+.btn-13 {
+  background: #ffeb3b;
+  color: #000;
+}
+.btn-14 {
+  background: #cddc39;
+  color: #000;
+}
+.btn-15 {
+  background: #ffc107;
+  color: #000;
+}
+.btn-16 {
+  background: #673ab7;
+}
+.btn-17 {
+  background: #009688;
+}
+.btn-18 {
+  background: #f44336;
+}
+.btn-19 {
+  background: #607d8b;
+}
+.btn-20 {
+  background: #ff1744;
+}
+.btn-21 {
+  background: #00e676;
+}
+.btn-22 {
+  background: #2979ff;
+}
+.btn-23 {
+  background: #aa00ff;
+}
+.btn-24 {
+  background: #ff6f00;
+}
+.btn-25 {
+  background: #1de9b6;
+}
+.btn-26 {
+  background: #651fff;
+}
+.btn-27 {
+  background: #d50000;
+}
+.btn-28 {
+  background: #00bfa5;
+}
+.btn-29 {
+  background: #64dd17;
+}
+.btn-30 {
+  background: #ffd600;
+  color: #000;
+}
+.btn-31 {
+  background: #bf360c;
+}
+.btn-32 {
+  background: #212121;
+}
+.btn-33 {
+  background: #880e4f;
+}
+.btn-34 {
+  background: #3e2723;
+}
+.btn-35 {
+  background: #4a148c;
+}
+.btn-36 {
+  background: #006064;
+}
+.btn-37 {
+  background: #827717;
+}
+.btn-38 {
+  background: #f06292;
+}
+.btn-39 {
+  background: #aed581;
+}
+.btn-40 {
+  background: #81d4fa;
+}
+.btn-41 {
+  background: #ffab91;
+}
+.btn-42 {
+  background: #a1887f;
+}
+.btn-43 {
+  background: #ce93d8;
+}
+.btn-44 {
+  background: #90caf9;
+}
+.btn-45 {
+  background: #ffccbc;
+}
+.btn-46 {
+  background: #b2dfdb;
+}
+.btn-47 {
+  background: #c5e1a5;
+}
+.btn-48 {
+  background: #ffecb3;
+  color: #000;
+}
+.btn-49 {
+  background: #d7ccc8;
+  color: #000;
+}
+.btn-50 {
+  background: #b0bec5;
+}
+
+.btn-1:hover {
+  transform: scale(1.1);
+}
+.btn-1:active {
+  transform: scale(0.95) rotate(-2deg);
+}
+
+.btn-2:hover {
+  box-shadow: 0 0 15px #2196f3;
+}
+.btn-2:active {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.btn-3:hover {
+  transform: rotate(-3deg);
+}
+.btn-3:active {
+  transform: scale(0.9);
+}
+
+.btn-4:hover {
+  transform: translateY(-5px);
+}
+.btn-4:active {
+  transform: translateY(2px);
+}
+
+.btn-5:hover {
+  letter-spacing: 2px;
+}
+.btn-5:active {
+  transform: scale(0.98);
+}
+
+.btn-6:hover {
+  background: #5c6bc0;
+}
+.btn-6:active {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.btn-7:hover {
+  transform: rotate(5deg);
+}
+.btn-7:active {
+  transform: scale(0.9);
+}
+
+.btn-8:hover {
+  filter: brightness(1.2);
+}
+.btn-8:active {
+  transform: scale(1.03);
+}
+
+.btn-9:hover {
+  animation: pulse 0.6s infinite alternate;
+}
+.btn-9:active {
+  transform: scale(0.92);
+}
+
+.btn-10:hover {
+  transform: skewX(-10deg);
+}
+.btn-10:active {
+  transform: skewX(0deg) scale(0.95);
+}
+
+.btn-11:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+.btn-11:active {
+  transform: scale(0.95) rotate(-2deg);
+}
+
+.btn-12:hover {
+  box-shadow: inset 0 0 10px #fff;
+}
+.btn-12:active {
+  transform: scale(0.97);
+}
+
+.btn-13:hover {
+  filter: hue-rotate(90deg);
+}
+.btn-13:active {
+  transform: scale(0.9);
+}
+
+.btn-14:hover {
+  transform: translateX(5px);
+}
+.btn-14:active {
+  transform: translateX(-5px);
+}
+
+.btn-15:hover {
+  text-shadow: 0 0 5px #fff;
+}
+.btn-15:active {
+  transform: scale(1.1);
+}
+
+.btn-16:hover {
+  background: linear-gradient(to right, #f00, #0f0);
+}
+.btn-16:active {
+  filter: brightness(1.2);
+}
+
+.btn-17:hover {
+  border: 2px solid white;
+}
+.btn-17:active {
+  transform: scale(0.92);
+}
+
+.btn-18:hover {
+  filter: grayscale(0.5);
+}
+.btn-18:active {
+  transform: rotate(10deg);
+}
+
+.btn-19:hover {
+  transform: scale(1.2) skewX(10deg);
+}
+.btn-19:active {
+  transform: scale(0.8);
+}
+
+.btn-20:hover {
+  background: #000;
+  color: #fff;
+}
+.btn-20:active {
+  transform: translateY(4px);
+}
+
+.btn-21:hover {
+  filter: invert(1);
+}
+.btn-21:active {
+  transform: scale(1.05);
+}
+
+.btn-22:hover {
+  transform: rotateY(180deg);
+}
+.btn-22:active {
+  transform: rotateY(0deg);
+}
+
+.btn-23:hover {
+  letter-spacing: 3px;
+}
+.btn-23:active {
+  transform: scale(0.95);
+}
+
+.btn-24:hover {
+  background: radial-gradient(circle, #ff0, #f00);
+}
+.btn-24:active {
+  filter: contrast(1.2);
+}
+
+.btn-25:hover {
+  transform: perspective(300px) rotateX(15deg);
+}
+.btn-25:active {
+  transform: rotateX(0deg);
+}
+
+.btn-26:hover {
+  border-radius: 2rem;
+}
+.btn-26:active {
+  transform: scale(1.05);
+}
+
+.btn-27:hover {
+  transform: rotateZ(10deg);
+}
+.btn-27:active {
+  transform: rotateZ(-10deg);
+}
+
+.btn-28:hover {
+  opacity: 0.8;
+}
+.btn-28:active {
+  transform: scale(1.05);
+}
+
+.btn-29:hover {
+  background: repeating-linear-gradient(
+    45deg,
+    #f00,
+    #f00 10px,
+    #fff 10px,
+    #fff 20px
+  );
+}
+.btn-29:active {
+  transform: scale(0.9);
+}
+
+.btn-30:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.btn-30:active {
+  box-shadow: none;
+}
+
+.btn-31:hover {
+  filter: blur(1px);
+}
+.btn-31:active {
+  filter: blur(0);
+}
+
+.btn-32:hover {
+  transform: scale(1.05) skewY(5deg);
+}
+.btn-32:active {
+  transform: scale(0.95) skewY(-5deg);
+}
+
+.btn-33:hover {
+  background-color: #222;
+  color: #fff;
+}
+.btn-33:active {
+  transform: rotate(-5deg);
+}
+
+.btn-34:hover {
+  border: 3px dashed #fff;
+}
+.btn-34:active {
+  background-color: #333;
+}
+
+.btn-35:hover {
+  transform: scaleX(1.2);
+}
+.btn-35:active {
+  transform: scaleX(0.8);
+}
+
+.btn-36:hover {
+  filter: saturate(2);
+}
+.btn-36:active {
+  filter: saturate(1);
+}
+
+.btn-37:hover {
+  background: conic-gradient(#f00, #0f0, #00f, #f00);
+}
+.btn-37:active {
+  transform: scale(1.1);
+}
+
+.btn-38:hover {
+  text-transform: uppercase;
+}
+.btn-38:active {
+  letter-spacing: 4px;
+}
+
+.btn-39:hover {
+  box-shadow: inset 0 0 10px #000;
+}
+.btn-39:active {
+  transform: scale(1.05);
+}
+
+.btn-40:hover {
+  filter: sepia(1);
+}
+.btn-40:active {
+  filter: sepia(0.5);
+}
+
+.btn-41:hover {
+  background: #111;
+  color: #0f0;
+}
+.btn-41:active {
+  transform: rotate(2deg);
+}
+
+.btn-42:hover {
+  outline: 2px dotted #fff;
+}
+.btn-42:active {
+  outline-offset: 4px;
+}
+
+.btn-43:hover {
+  transform: scale(1.15) rotate(3deg);
+}
+.btn-43:active {
+  transform: scale(0.85) rotate(-3deg);
+}
+
+.btn-44:hover {
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.btn-44:active {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-45:hover {
+  background: #333;
+  box-shadow: 0 0 20px #fff inset;
+}
+.btn-45:active {
+  transform: translateY(5px);
+}
+
+.btn-46:hover {
+  transform: scale(1.1) skew(5deg, 5deg);
+}
+.btn-46:active {
+  transform: scale(0.9) skew(-5deg, -5deg);
+}
+
+.btn-47:hover {
+  filter: brightness(1.5);
+}
+.btn-47:active {
+  filter: brightness(0.8);
+}
+
+.btn-48:hover {
+  mix-blend-mode: difference;
+}
+.btn-48:active {
+  opacity: 0.9;
+}
+
+.btn-49:hover {
+  animation: wiggle 0.3s ease-in-out infinite;
+}
+.btn-49:active {
+  animation: none;
+}
+
+.btn-50:hover {
+  transform: scale(1.05) translateY(-2px);
+}
+.btn-50:active {
+  transform: scale(0.95) translateY(2px);
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
