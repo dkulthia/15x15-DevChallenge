@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    width: 600px;
+    height: 600px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  font-family: "Baloo 2", cursive;
+  background: linear-gradient(#8399a2, #eef2f3);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #343a40;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "Baloo 2", cursive;
+}
+
+header a {
+  color: white;
+  font-size: 1.4rem;
+  transition: color 0.2s;
+}
+
+header a:hover {
+  color: #0d6efd;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-family: "Baloo 2", cursive;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Baloo 2", cursive;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  font-family: "Baloo 2", cursive;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Baloo 2", cursive;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.add-icon {
+  color: #0d6efd;
+  font-size: 1.8rem;
+  margin-left: 10px;
+  cursor: pointer;
+  align-self: center;
+  transition: color 0.2s;
+}
+
+.add-icon:hover {
+  color: #084298;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  font-size: 16px;
+  font-family: "Baloo 2", cursive;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0b5ed7;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #f8f9fa;
+  border-left: 5px solid #0d6efd;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  cursor: grab;
+}
+
+li.completed .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.grip {
+  cursor: move;
+  color: #888;
+  margin-right: 12px;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Baloo 2", cursive;
+}
+
+.task-text input {
+  width: 100%;
+  padding: 6px;
+  font-size: 16px;
+  font-family: "Baloo 2", cursive;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-family: "Baloo 2", cursive;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.actions button:hover {
+  color: #000;
+}
+
+.actions .delete {
+  color: #dc3545;
+}
+
+.actions .delete:hover {
+  color: #b02a37;
+}
