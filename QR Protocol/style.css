@@ -1,0 +1,129 @@
+body {
+  font-family: "Baloo 2", cursive;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+header {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: "Baloo 2", cursive;
+  color: #333;
+}
+
+header a {
+  color: #333;
+  font-size: 1.8rem;
+  transition: color 0.2s ease;
+}
+
+header a:hover {
+  color: #007bff;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Baloo 2", cursive;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 1rem;
+}
+
+input[type="color"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid #ccc;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 2px;
+  border-radius: 4px;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-family: "Baloo 2", cursive;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#qrcode {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 0.95rem;
+  font-family: "Baloo 2", cursive;
+  color: #555;
+}

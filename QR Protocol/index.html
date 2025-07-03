@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced QR Code Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>QR Protocol</h1>
+    <a href="https://github.com/dkulthia/QR-Protocol" target="_blank" title="GitHub Repo">
+      <i class="fab fa-github"></i>
+    </a>
+  </header>
+
+  <div class="container">
+    <h2>🔳 Advanced QR Code Generator</h2>
+
+    <label for="text">Text or URL</label>
+    <input type="text" id="text" placeholder="Enter text or URL" />
+
+    <label for="fgColor">Foreground Color</label>
+    <input type="color" id="fgColor" value="#000000" />
+
+    <label for="bgColor">Background Color</label>
+    <input type="color" id="bgColor" value="#ffffff" />
+
+    <label for="size">QR Code Size (px)</label>
+    <select id="size">
+      <option value="150">150 x 150</option>
+      <option value="200" selected>200 x 200</option>
+      <option value="250">250 x 250</option>
+      <option value="300">300 x 300</option>
+    </select>
+
+    <label for="cornerStyle">Corner Style</label>
+    <select id="cornerStyle">
+      <option value="square">Square</option>
+      <option value="dots">Dots</option>
+      <option value="rounded" selected>Rounded</option>
+      <option value="classy">Classy</option>
+      <option value="classy-rounded">Classy Rounded</option>
+      <option value="extra-rounded">Extra Rounded</option>
+    </select>
+
+    <label for="margin">Margin (px)</label>
+    <select id="margin">
+      <option value="0">0</option>
+      <option value="5" selected>5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+    </select>
+
+    <button onclick="generateQRCode()">Generate QR Code</button>
+    <button onclick="downloadQRCode()">Download as PNG</button>
+
+    <div id="qrcode"></div>
+  </div>
+
+  <footer>
+    <Strong>
+      <p>© 2025 QR Protocol. All Rights Reserved. Developed by Darsh Kulthia.</p>
+    </Strong>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
